@@ -1,2 +1,2 @@
-# 01_ffyur
-Artist Booking Site
+# Fyyur: Artist Booking Site
+
