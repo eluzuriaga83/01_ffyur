@@ -1,0 +1,26 @@
+{% extends 'layouts/main.html' %}
+{% block title %}{{ album.artist_name }} | Artist{% endblock %}
+{% block content %}
+<div class="row">
+	<div class="col-sm-3">
+		<h3 class="monospace">
+			ALBUM: {{ album.title }}
+		</h3>
+		
+		<div class="lists-wrapper">
+            
+            <ul id="div_lists">
+                {% for song in songs %}
+                    <li>
+                        {{ song.name }}
+                        
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+		
+	</div>
+</div>
+
+{% endblock %}
+
